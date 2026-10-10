@@ -28,6 +28,7 @@ CI (`.github/workflows/ci.yml`) runs lint then test on every push and pull reque
 
 ## Conventions
 
-- CommonJS throughout (`require` / `module.exports`), not ES modules.
-- ESLint allows unused arguments named `_`, `req`, `res`, or `next`, so Express handler signatures can keep them without warnings.
-- Tests use `node:test` with `assert` and `supertest` against the exported `app`, not a running server.
+- Use `require` / `module.exports` (CommonJS), not ES `import` / `export` modules.
+- Use the parameter names `_`, `req`, `res`, or `next` for unused Express handler arguments, not other unused names, so ESLint stays quiet.
+- Use `node:test` with `assert` and `supertest` against the exported `app`, not a running server.
+- Use `Number(req.params.id)` for route IDs, not string IDs, because stored IDs are numeric.
