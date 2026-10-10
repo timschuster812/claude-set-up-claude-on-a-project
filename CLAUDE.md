@@ -2,6 +2,10 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+# Description
+
+A REST API for user management built with Express.js
+
 ## Commands
 
 - `npm install` — install dependencies (CI uses Node 22)
