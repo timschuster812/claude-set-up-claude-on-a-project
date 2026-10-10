@@ -1,8 +1,5 @@
-# Notes
 
-These answers are hypothetical. I didn't write `CLAUDE.md` or `.claude/settings.json`; they were already in the project.
-
-## 1. If I had written CLAUDE.md: what would be included, omitted, and why?
+## 1. What is included in my Claude.md, and why?
 
 **Included:**
 
